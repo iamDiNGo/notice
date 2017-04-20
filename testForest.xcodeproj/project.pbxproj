@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D5775F001EA47E470056EA0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5775EFF1EA47E470056EA0B /* AppDelegate.swift */; };
-		D5775F021EA47E470056EA0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5775F011EA47E470056EA0B /* ViewController.swift */; };
+		D5775F021EA47E470056EA0B /* VCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5775F011EA47E470056EA0B /* VCMain.swift */; };
 		D5775F051EA47E470056EA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5775F031EA47E470056EA0B /* Main.storyboard */; };
 		D5775F081EA47E470056EA0B /* testForest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5775F061EA47E470056EA0B /* testForest.xcdatamodeld */; };
 		D5775F0A1EA47E480056EA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5775F091EA47E480056EA0B /* Assets.xcassets */; };
 		D5775F0D1EA47E480056EA0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5775F0B1EA47E480056EA0B /* LaunchScreen.storyboard */; };
+		D5775F181EA488290056EA0B /* VCEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5775F171EA488290056EA0B /* VCEdit.swift */; };
+		D5775F1A1EA4E9F40056EA0B /* VCSee.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5775F191EA4E9F40056EA0B /* VCSee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5775EFC1EA47E470056EA0B /* testForest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testForest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5775EFF1EA47E470056EA0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5775F011EA47E470056EA0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5775F011EA47E470056EA0B /* VCMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMain.swift; sourceTree = "<group>"; };
 		D5775F041EA47E470056EA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5775F071EA47E470056EA0B /* testForest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testForest.xcdatamodel; sourceTree = "<group>"; };
 		D5775F091EA47E480056EA0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5775F0C1EA47E480056EA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5775F0E1EA47E480056EA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5775F171EA488290056EA0B /* VCEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCEdit.swift; sourceTree = "<group>"; };
+		D5775F191EA4E9F40056EA0B /* VCSee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCSee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,8 @@
 		D5775EFE1EA47E470056EA0B /* testForest */ = {
 			isa = PBXGroup;
 			children = (
+				D5775F151EA47E7A0056EA0B /* Controller */,
 				D5775EFF1EA47E470056EA0B /* AppDelegate.swift */,
-				D5775F011EA47E470056EA0B /* ViewController.swift */,
 				D5775F031EA47E470056EA0B /* Main.storyboard */,
 				D5775F091EA47E480056EA0B /* Assets.xcassets */,
 				D5775F0B1EA47E480056EA0B /* LaunchScreen.storyboard */,
@@ -65,6 +69,16 @@
 				D5775F061EA47E470056EA0B /* testForest.xcdatamodeld */,
 			);
 			path = testForest;
+			sourceTree = "<group>";
+		};
+		D5775F151EA47E7A0056EA0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5775F011EA47E470056EA0B /* VCMain.swift */,
+				D5775F171EA488290056EA0B /* VCEdit.swift */,
+				D5775F191EA4E9F40056EA0B /* VCSee.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5775F021EA47E470056EA0B /* ViewController.swift in Sources */,
+				D5775F021EA47E470056EA0B /* VCMain.swift in Sources */,
+				D5775F1A1EA4E9F40056EA0B /* VCSee.swift in Sources */,
+				D5775F181EA488290056EA0B /* VCEdit.swift in Sources */,
 				D5775F001EA47E470056EA0B /* AppDelegate.swift in Sources */,
 				D5775F081EA47E470056EA0B /* testForest.xcdatamodeld in Sources */,
 			);
@@ -269,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C2B3HVUV3F;
 				INFOPLIST_FILE = testForest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingo.testForest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C2B3HVUV3F;
 				INFOPLIST_FILE = testForest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingo.testForest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +326,7 @@
 				D5775F131EA47E480056EA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
